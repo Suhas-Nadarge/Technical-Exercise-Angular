@@ -1,0 +1,8 @@
+{
+	"labelFirstName": "Vorname",
+	"labelUserName": "Nutzername",
+	"messgError": "Etwas ist schief gelaufen",
+	"messgLoading": "Lade Daten....",
+	"messgSaving": "Daten speichern....",
+	"title": "Profil"
+}

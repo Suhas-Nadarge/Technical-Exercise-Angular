@@ -1,0 +1,8 @@
+{
+	"labelFirstName": "Prénom",
+	"labelUserName": "Nom d'utilisateur",
+	"messgError": "Quelque chose a mal tourné",
+	"messgLoading": "Chargement des données....",
+	"messgSaving": "La sauvegarde des données....",
+	"title": "Profil"
+}

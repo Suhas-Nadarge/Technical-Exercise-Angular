@@ -1,0 +1,8 @@
+{
+	"labelFirstName": "Nombre de pila",
+	"labelUserName": "Nombre de usuario",
+	"messgError": "Algo salió mal",
+	"messgLoading": "Cargando datos....",
+	"messgSaving": "Guardando datos ...",
+	"title": "Perfil"
+}

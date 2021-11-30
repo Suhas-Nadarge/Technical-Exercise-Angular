@@ -1,0 +1,17 @@
+<div>
+    <div>
+       <h3>{{'title' | translate}}</h3> 
+    <p>{{'labelUserName' | translate}} : ...</p>
+    </div>
+    <div>
+    <label>{{'labelFirstName' | translate}}</label>
+    <input type="text"/>
+    <input type="button" value="Save"/>
+    </div>
+    <p>{{'messgLoading' | translate}}</p>
+    <p>{{'messgSaving' | translate}}</p>
+    <p>{{'messgError' | translate}}</p>
+    <select (change)="setLanguage($event)">
+        <option *ngFor="let lang of languageList" [value]="lang.code">{{lang.desc}}</option>
+    </select>
+    </div>

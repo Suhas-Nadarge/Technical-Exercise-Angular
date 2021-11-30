@@ -1,0 +1,8 @@
+{
+	"labelFirstName": "First Name",
+	"labelUserName": "User Name",
+	"messgError": "Something went wrong",
+	"messgLoading": "Loading data....",
+	"messgSaving": "Saving data....",
+	"title": "Profile"
+}
