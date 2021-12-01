@@ -1,8 +1,13 @@
 {
+	"labelEmail": "Email",
 	"labelFirstName": "Nombre de pila",
+	"labelLastName": "Nombre de pila",
 	"labelUserName": "Nombre de usuario",
+	"messageEmailError": "Error al generar el correo electrónico, inténtalo de nuevo",
 	"messgError": "Algo salió mal",
 	"messgLoading": "Cargando datos....",
+	"messgRetry": "Espere, estamos intentando de nuevo obtener información para usted",
 	"messgSaving": "Guardando datos ...",
+	"messgUpdate": "Los datos del perfil se actualizaron correctamente",
 	"title": "Perfil"
 }

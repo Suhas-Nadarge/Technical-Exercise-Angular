@@ -1,8 +1,13 @@
 {
+	"labelEmail": "Email",
 	"labelFirstName": "Prénom",
+	"labelLastName": "Prénom",
 	"labelUserName": "Nom d'utilisateur",
+	"messageEmailError": "Erreur lors de la génération de l'e-mail, réessayez",
 	"messgError": "Quelque chose a mal tourné",
 	"messgLoading": "Chargement des données....",
+	"messgRetry": "Veuillez patienter, nous essayons à nouveau d'obtenir des informations pour vous",
 	"messgSaving": "La sauvegarde des données....",
+	"messgUpdate": "Données de profil mises à jour avec succès",
 	"title": "Profil"
 }

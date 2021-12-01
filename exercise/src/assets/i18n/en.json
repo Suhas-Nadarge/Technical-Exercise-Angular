@@ -1,8 +1,13 @@
 {
-	"labelFirstName": "First Name",
-	"labelUserName": "User Name",
+	"labelEmail": "Email ",
+	"labelFirstName": "First Name ",
+	"labelLastName": "Last Name ",
+	"labelUserName": "User Name ",
+	"messageEmailError": "Error on email generation, try again",
 	"messgError": "Something went wrong",
 	"messgLoading": "Loading data....",
-	"messgSaving": "Saving data....",
+	"messgRetry": "Please wait, we are trying again to get information for you",
+	"messgSaving": "Updating the data....",
+	"messgUpdate": "Profile Data updated successfully",
 	"title": "Profile"
 }

@@ -1,17 +1,24 @@
-<div>
+<div [formGroup]="profileForm">
     <div>
        <h3>{{'title' | translate}}</h3> 
-    <p>{{'labelUserName' | translate}} : ...</p>
+       <select (change)="setLanguage($event)">
+        <option *ngFor="let lang of languageList" [value]="lang.code">{{lang.desc}}</option>
+    </select> 
+    <p>{{'labelUserName' | translate}} : {{user?.username ? user?.username : 'Loading....'}}</p>
+    <p>{{'labelEmail' | translate}} : {{user?.email ? user?.email : 'Loading....'}}</p>
     </div>
     <div>
     <label>{{'labelFirstName' | translate}}</label>
-    <input type="text"/>
-    <input type="button" value="Save"/>
+    <input formControlName="fname" type="text"/><br>
+    <label>{{'labelLastName' | translate}}</label>
+    <input formControlName="lname" type="text"/><br>
+    <input type="button" [value]="emailError ? 'Retry': 'Update'" (click)="saveProfile()"/>
+    <!-- <input *ngIf="isError" type="button" value="Retry"> -->
     </div>
-    <p>{{'messgLoading' | translate}}</p>
-    <p>{{'messgSaving' | translate}}</p>
-    <p>{{'messgError' | translate}}</p>
-    <select (change)="setLanguage($event)">
-        <option *ngFor="let lang of languageList" [value]="lang.code">{{lang.desc}}</option>
-    </select>
+    <p *ngIf="isLoad && !isUpdate && !emailError"><b>{{'messgLoading' | translate}}</b></p>
+  <p style="color: red" *ngIf="emailError"><b>{{'messageEmailError' | translate}}</b></p>
+  <p *ngIf="isSave && !isError && !isUpdate && !emailError"><b>{{'messgSaving' | translate}}</b></p>
+    <p style="color: red" *ngIf="isError && !isUpdate"><b>{{'messgError' | translate}}</b></p>
+    <p style="color: green" *ngIf="isUpdate && !isError && !isLoad"><b>{{'messgUpdate' | translate}}</b></p>
+    <p *ngIf="isRetry && !emailError">{{'messgRetry' | translate}}</p>
     </div>
